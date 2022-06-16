@@ -4,8 +4,8 @@
 name: gray-nedb
 
 on:
-  release:
-    types: [created]
+  push:
+    branches: [ "master" ]
 
 jobs:
   build:
@@ -28,6 +28,7 @@ jobs:
           node-version: 16
           registry-url: https://registry.npmjs.org/
       - run: npm ci
-      - run: npm publish
+      - run: npm version patch
+      - run: npm publish --access public
         env:
-          NODE_AUTH_TOKEN: ${{secrets.npm_token}}
+          NODE_AUTH_TOKEN: ${{secrets.NPM_TOKEN}}
