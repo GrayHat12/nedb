@@ -1,6 +1,7 @@
 <img src="http://i.imgur.com/9O1xHFb.png" style="width: 25%; height: 25%; float: left;">
 
-## The JavaScript Database
+
+## The JavaScript Database [![Node.js CI](https://github.com/GrayHat12/nedb/actions/workflows/node.js.yml/badge.svg)](https://github.com/GrayHat12/nedb/actions/workflows/node.js.yml)
 
 
 **Embedded persistent or in memory database for Node.js, nw.js, Electron and browsers, 100% JavaScript, no binary dependency**. API is a subset of MongoDB's and it's <a href="#speed">plenty fast</a>.
